@@ -1,0 +1,6 @@
+{
+  "watch": ["src"],
+  "ext": ".ts,.js,.html,.css",
+  "ignore": [],
+  "exec": "bun run serve"
+}

@@ -3,13 +3,26 @@
   "version": "1.0.28",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --hot src/index.ts"
+    "serve": "bun run src/index.ts",
+    "dev": "bun run nodemon",
+    "build": "node build.js",
+    "start": "node build.js --watch"
   },
   "dependencies": {
-    "elysia": "latest"
+    "@elysiajs/html": "^0.1.0",
+    "@elysiajs/static": "^0.3.2",
+    "elysia": "latest",
+    "handlebars": "^4.7.7",
+    "spargo": "^1.0.1"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "autoprefixer": "^10.4.14",
+    "bun-types": "latest",
+    "esbuild": "^0.17.13",
+    "esbuild-style-plugin": "^1.6.1",
+    "nodemon": "^2.0.22",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7"
   },
   "module": "src/index.js"
 }

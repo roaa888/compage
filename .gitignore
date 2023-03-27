@@ -8,10 +8,6 @@
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
-
 # production
 /build
 
@@ -30,8 +26,13 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
-# vercel
-.vercel
+# public
+/public/spargo.js
+/public/spargo.js.map
+/public/style.css
+/public/style.css.map
+/public/style.js
+/public/style.js.map
 
 **/*.trace
 **/*.zip
